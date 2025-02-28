@@ -1,0 +1,180 @@
+/* Main container styles */
+.app-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Header styles */
+.app-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-align: center;
+  color: #333;
+}
+
+.image-container {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header-image {
+  max-width: 100%;
+  height: auto;
+  max-height: 300px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Instructions styles */
+.instructions-title {
+  font-size: 18px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.instructions-text {
+  font-size: 14px;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto 20px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Scenario selector styles */
+.scenario-selector {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.scenario-selector select {
+  padding: 8px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  font-size: 14px;
+}
+
+.scenario-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.scenario-btn:hover {
+  background-color: #3367d6;
+}
+
+/* Chat container styles */
+.chat-container {
+  display: flex;
+  gap: 20px;
+  width: 100%;
+}
+
+/* Chat window styles */
+.chat-window {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.advisor-window {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.window-header {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+.chat-history {
+  height: 350px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 12px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+  background-color: #f9f9f9;
+}
+
+.chat-message {
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.message-sender {
+  font-weight: bold;
+  color: #333;
+}
+
+/* Form styles */
+.user-input {
+  height: 80px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.submit-btn {
+  background-color: #4285f4;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 100%;
+  font-size: 14px;
+}
+
+.submit-btn:hover {
+  background-color: #3367d6;
+}
+
+/* Advisor feedback styles */
+.advisor-feedback {
+  white-space: pre-wrap;
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f0f5ff;
+  border-left: 3px solid #4285f4;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .chat-container {
+    flex-direction: column;
+  }
+  
+  .chat-window, .advisor-window {
+    width: 100%;
+  }
+  
+  .chat-history {
+    height: 250px;
+  }
+}
